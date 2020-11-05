@@ -1,7 +1,6 @@
 import tensorflow as tf
 import numpy as np
 import streamlit as st
-import os
 from PIL import Image
 import requests
 from io import BytesIO
@@ -10,7 +9,7 @@ st.title("xray")
 st.text("provide URL")
 @st.cache(allow_output_mutation=True)
 def load_model():
-    model = tf.keras.models.load_model('C:/Users/arunachalam/Downloads/p_detection.h5')
+    model = tf.keras.models.load_model('')
     return model
 
 with st.spinner('loading model into memory....'):
