@@ -9,7 +9,7 @@ st.title("xray")
 st.text("provide URL")
 @st.cache(allow_output_mutation=True)
 def load_model():
-    model = tf.keras.models.load_model('')
+    model = tf.keras.models.load_model(p_detection (2).h5)
     return model
 
 with st.spinner('loading model into memory....'):
