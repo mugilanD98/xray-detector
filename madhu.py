@@ -35,7 +35,7 @@ if path is not None:
     st.write("predicted class:")
     with st.spinner('classify'):
         lab=model.predict(decode_img(content))
-        if lab >= 5.6:
+        if lab >= 0.56:
            lable=classes[1]
         else:
            lable=classes[0]
