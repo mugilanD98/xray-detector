@@ -8,6 +8,7 @@ from io import BytesIO
 st.set_option('deprecation.showfileUploaderEncoding',False)
 st.title("radiology assistant")
 st.text("provide URL of x-ray to classify")
+st.title("image should be any one of given formats (jpeg,png,jpg)")
 @st.cache(allow_output_mutation=True)
 def load_model():
     model = tf.keras.models.load_model('pneumoniamugi.h5')
