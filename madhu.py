@@ -34,7 +34,12 @@ if path is not None:
 
     st.write("predicted class:")
     with st.spinner('classify'):
-        lable=classes[int(model.predict(decode_img(content)))]
+        lab=model.predict(decode_img(content))
+        if lab >= 5.6:
+           lable=classes[1]
+        else:
+           lable=classes[0]
+        
         st.write(lable)
     st.write("")
     image=Image.open(BytesIO(content))
