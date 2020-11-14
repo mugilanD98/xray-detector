@@ -6,7 +6,7 @@ from PIL import Image
 import requests
 from io import BytesIO
 st.set_option('deprecation.showfileUploaderEncoding',False)
-st.markdown("<h1 style='text-align: center; color: black;'>radiology assistant<h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: black;'>Radiology Assistant<h1>", unsafe_allow_html=True)
 st.text("provide URL of x-ray to classify")
 st.text("image should be any one of given formats (jpeg,png,jpg)")
 @st.cache(allow_output_mutation=True)
@@ -41,7 +41,7 @@ if path is not None:
         else:
            lable=classes[0]
         
-        st.write(lable)
+        st.write(<h1>lable<h1>)
     st.write("")
     image=Image.open(BytesIO(content))
     st.image(image,caption='classify xray',use_column_width=True)
