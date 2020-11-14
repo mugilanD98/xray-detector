@@ -7,7 +7,7 @@ import requests
 from io import BytesIO
 st.set_option('deprecation.showfileUploaderEncoding',False)
 st.markdown("<h1 style='text-align: center; color: red;'>radiology assistant<h1>", unsafe_allow_html=True)
-st.text("provide URL of x-ray to classify")
+st.text("<h1>provide URL of x-ray to classify<h1>")
 st.text("image should be any one of given formats (jpeg,png,jpg)")
 @st.cache(allow_output_mutation=True)
 def load_model():
