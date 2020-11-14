@@ -6,7 +6,7 @@ from PIL import Image
 import requests
 from io import BytesIO
 st.set_option('deprecation.showfileUploaderEncoding',False)
-st.markdown("<span style="background-color:#121922">",unsafe_allow_html=True)
+st.markdown("<span style="background-color:121922">",unsafe_allow_html=True)
 st.markdown("<h1 style='text-align: center; color: black;'>Radiology Assistant<h1>", unsafe_allow_html=True)
 st.text("provide URL of x-ray to classify")
 st.text("image should be any one of given formats (jpeg,png,jpg)")
