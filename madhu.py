@@ -30,7 +30,7 @@ def decode_img(image):
     img=scale(img) 
     return np.expand_dims(img,axis=0)
 
-path = st.text_input('enter image url ','https://www.google.com/search?q=pneumonia+xray+image&sxsrf=ALeKk02bwnLut3n62a_W2cb2SXGiaS5how:1606415359413&tbm=isch&source=iu&ictx=1&fir=wUTNtEBvV3Ea7M%252CIMJvIYoo2zUf_M%252C_&vet=1&usg=AI4_-kQKqQI35ygqOPewZ1ZEsHMC4nZQRw&sa=X&ved=2ahUKEwjf6e_G66DtAhVDXSsKHThvB4sQ9QF6BAgGEAY&biw=1366&bih=667#imgrc=wUTNtEBvV3Ea7M')
+path = st.text_input('enter image url ','https://prod-images-static.radiopaedia.org/images/52302679/2359ab3b9b9b0bfc9874f158bda46a_jumbo.jpeg')
 if path is not None:
     content=requests.get(path).content
 
